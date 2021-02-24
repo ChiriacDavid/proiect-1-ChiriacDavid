@@ -1,8 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE persoana [
+<!ELEMENT persoana (nume, prenume,varsta,facultate,adresa)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT prenume (#PCDATA)>
+<!ELEMENT varsta (#PCDATA)>
+<!ELEMENT facultate (#PCDATA)>
+<!ELEMENT adresa (#PCDATA)>
+]>
 <persoane>
     <persoana id="1">
         <nume>Popescu</nume>
         <prenume>Ion</prenume>
         <varsta>23</varsta>
+        <facultate>AC</facultate>
+        <adresa>
+            <strada>Margaretelor</strada>
+            <numar>37B</numar>
+            <localitate>Catamaresti-Deal</localitate>
+            <judet>Botosani</judet>
+            <tara>Romania</tara>
+        </adresa>
     </persoana>
+    
+    <persoana id="2">
+        <nume>Antoanovici</nume>
+        <prenume>Mirel</prenume>
+        <varsta>21</varsta>
+        <facultate>Mecanica</facultate>
+        <adresa>
+            <strada>Razboiului</strada>
+            <numar>41</numar>
+            <localitate>Busteni</localitate>
+            <judet>Cluj-Napoca</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    
+    <persoana id="3">
+        <nume>Popa</nume>
+        <prenume>Cosmin</prenume>
+        <varsta>27</varsta>
+        <facultate>Constructii</facultate>
+        <adresa>
+            <strada>Independentei</strada>
+            <numar>109</numar>
+            <localitate>Suceava</localitate>
+            <judet>Suceava</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    
+    <persoana id="4">
+        <nume>Calimara</nume>
+        <prenume>Andrei</prenume>
+        <varsta>18</varsta>
+        <facultate>Litere</facultate>
+        <adresa>
+            <strada></strada>
+            <numar>41</numar>
+            <localitate>Busteni</localitate>
+            <judet>Cluj-Napoca</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+
+    <persoana id="5">
+        <nume>Anton</nume>
+        <prenume>Anton</prenume>
+        <varsta>32</varsta>
+        <facultate>Psihologie</facultate>
+        <adresa>
+            <strada>Primaverii</strada>
+            <numar>211</numar>
+            <localitate>Botosani</localitate>
+            <judet>Botosani</judet>
+            <tara>Romania</tara>
+        </adresa>
+    </persoana>
+    
 </persoane>
