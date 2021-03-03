@@ -26,8 +26,8 @@
         </style>
         <table style="width:147">
             <tr>
-              <td>table</th>
-              <td>defineste un tabel</th>
+              <td><em>table</em></th>
+              <td><em>defineste un tabel</em></th>
             </tr>
             <tr>
               <td>tr</td>
@@ -42,5 +42,28 @@
         <b>Observatie:</b> Pentru a pune un contur unui tabel se poate (dar nu se recomanda) sa se puna atributul border="1".
         <br/>
         La validare va da eroare: <i>The boder attribute on the table element is absolete.</i>
+        <p>
+        Formularele se pot crea cu ajutorul tag-ului <em>form</em> care poate contine tag-urile: <em>input, textarea, label, select, option, button.</em>
+        <br/>
+        Pentru mai multe detalii consultati cursul sau tutorialul <a href="https://www.w3schools.com/thml/html_forms.asp">HTML Forms and Inputs</a> de la adresa <a href= "https://www.w3schools.com/thml/html_forms.asp">https://www.w3schools.com/thml/html_forms.asp</a>.
+        <br/> <br/>
+        <form>
+            <label for "Nume">Nume:</label>
+            <input type="text" id="Nume" name="Nume"><br>
+            <label for "Prenume">Prenume:</label>
+            <input type="text" id "Prenume" name="Prenume"><br>
+            <label for "Parola">Parola:</label>
+            <input type="password" id="Parola" name="Parola"><br>
+            <label for "CuloarePref">Culoarea preferata:</label>
+            <select id="culori" name="culori" size="3">
+                <option value="rosu">Rosu</option>
+                <option value="albastru">Albastru</option>
+                <option value="verde">Verde</option>
+            </select><br>
+            <label for "Descriere">Descriere:</label>
+            <textarea id="Descriere" name="Descriere" rows="10" cols="50">
+            </textarea>
+        </form>
+        </p>
     </body>
 </html>
