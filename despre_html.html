@@ -13,7 +13,7 @@
         <p> Un exemplu de cod html il gasiti in imaginea urmatoare care se afla la adresa <a href="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png">https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png</a> 
             <br/>Imaginea are atributul height de valoare 147
         </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png" alt="HTML logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png" alt="HTML logo" height="147">
         <br/> <br/>
         <b><i>Tag-urile</i></b> html cele mai utilizate in realizarea tabelelor sunt:
         <br/> 
@@ -24,10 +24,10 @@
                 border: 2px solid #000000
             }
         </style>
-        <table style="width:147">
+        <table>
             <tr>
-              <td><em>table</em></th>
-              <td><em>defineste un tabel</em></th>
+              <td>table</td>
+              <td>defineste un tabel</td>
             </tr>
             <tr>
               <td>tr</td>
@@ -39,13 +39,14 @@
             </tr>
         </table> 
         <br/>
-        <b>Observatie:</b> Pentru a pune un contur unui tabel se poate (dar nu se recomanda) sa se puna atributul border="1".
+        <b>Observatie:</b> Pentru a pune un contur unui tabel se poate (dar nu se recomanda) sa se puna atributul <small>border="1"</small>.
         <br/>
         La validare va da eroare: <i>The boder attribute on the table element is absolete.</i>
+        
         <p>
-        Formularele se pot crea cu ajutorul tag-ului <em>form</em> care poate contine tag-urile: <em>input, textarea, label, select, option, button.</em>
+        Formularele se pot crea cu ajutorul tag-ului <em>form</em> care poate contine tag-urile: <small>input, textarea, label, select, option, button.</small>
         <br/>
-        Pentru mai multe detalii consultati cursul sau tutorialul <a href="https://www.w3schools.com/thml/html_forms.asp">HTML Forms and Inputs</a> de la adresa <a href= "https://www.w3schools.com/thml/html_forms.asp">https://www.w3schools.com/thml/html_forms.asp</a>.
+        Pentru mai multe detalii consultati cursul sau tutorialul <a href="http://www.w3schools.com/html/html_forms.asp">HTML Forms and Inputs</a> de la adresa <a href= "http://www.w3schools.com/html/html_forms.asp">http://www.w3schools.com/html/html_forms.asp</a>.
         <br/> <br/>
         <form>
             <label>Nume:</label>
@@ -71,9 +72,25 @@
             <input type="checkbox">
             <label>Sunt de acord cu conditiile</label><br>
             <br>
-            
+
             <button>Inregistreaza</button>
         </form>
+        </p>
+
+        <p>
+            Pentru a crea liste se pot folosi tag-urile:<br>
+            <ol type = "i">
+                <li>ul - lista neordonata</li>
+                <li>ol - lista ordonata</li>
+                <li>li - item in lista</li>
+                <li>dl - lista cu descrieri</li>
+                <li>dt - termen dintr-o lista cu descrieri</li>
+                <li>dd - descrierea dintr-o lista cu descrieri</li>
+            </ol><br>
+
+            Pentru a insera un document HTML în altul se poate folosi tag-ul &ltiframe&gt. <br>
+            Astfel, exemplul de mai jos inserează conținutul de la adresa <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>. <br>
+            <iframe src="https://html.spec.whatwg.org/multipage/" title="html page" width="650"></iframe>
         </p>
     </body>
 </html>
