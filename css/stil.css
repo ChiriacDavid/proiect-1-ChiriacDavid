@@ -1,0 +1,41 @@
+.topnav {
+  background-color: #767;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav a:hover {
+  color: #FF00FF;
+}
+
+p::first-letter {
+  font-size:30px;
+}
+
+table, th, td {
+  border:1px solid #000000;
+  border:2px solid #000000;
+}
+
+fieldset {
+  background-color: #03fc77;
+}
+
+body {
+  background-color: #0380fc;
+}
+
