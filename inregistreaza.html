@@ -16,27 +16,27 @@
 	<form>
 		<fieldset>
 			<legend>Informatii generale:</legend>
-			<label for="NumeUtilizator">Nume utilizator:</label>
+			<label id="NumeUtilizator">Nume utilizator:</label>
 			<input type="text" name="NumeUtilizator"><br><br>
-			<label for="Parola">Parola:</label>
+			<label id="Parola">Parola:</label>
 			<input type="password" name="Parola"><br><br>
-			<label for="Nume">Nume:</label>
+			<label id="Nume">Nume:</label>
 			<input type="text" name="Nume"><br><br>
-			<label for="Prenume">Prenume</label>
+			<label id="Prenume">Prenume</label>
 			<input type="text" name="Prenume"><br><br>
-			<label for="Email">Email:</label>
+			<label id="Email">Email:</label>
 			<input type="email" name="Email"><br><br>
-			<label for="Telefon">Telefon:</label>
+			<label id="Telefon">Telefon:</label>
 			<input type="tel" name="Telefon">
 		</fieldset>
 		<fieldset>
 			<legend>Informatii personale:</legend>
-			<label for="Sexul">Sexul:</label>
+			<label id="Sexul">Sexul:</label>
 			<select name="Sexul">
 				<option value="M">M</option>
 				<option value="F">F</option>
 			</select><br><br>
-			<label for="Mancare">Mancare preferata:</label>
+			<label id="Mancare">Mancare preferata:</label>
 			<input list="mancare" name="Mancare">
 			<datalist id="mancare">
 				<option value="Sarmale">
@@ -44,18 +44,19 @@
 				<option value="Pizza">
 				<option value="Paste">
 			</datalist><br><br>
-			<label for="Culoare">Culoarea preferata:</label>
+			<label id="Culoare">Culoarea preferata:</label>
 			<input type="color"><br><br>
-			<label for="DataNasterii">Data nasterii:</label>
+			<label id="DataNasterii">Data nasterii:</label>
 			<input type="date"><br><br>
-			<label for="OraNasterii">Ora nasterii:</label>
+			<label id="OraNasterii">Ora nasterii:</label>
 			<input type="time"><br><br>
-			<label for="Varsta">Varsta:</label>
+			<label id="Varsta">Varsta:</label>
 			<input type="range" min="0" max="100"><br><br>
-			<label for="Adresa">Adresa paginii personale:</label>
+			<label id="Adresa">Adresa paginii personale:</label>
 			<input type="url"><br><br>
-			<label for="Descriere">Descriere:</label>
-			<input type="textarea"><br><br>
+			<label id="Descriere">Descriere:</label>
+			<textarea>
+			</textarea>
 		</fieldset>
 		<button type="button" disabled>Inregistreaza</button>
 	</form>
