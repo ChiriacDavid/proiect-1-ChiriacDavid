@@ -57,4 +57,10 @@ body {
   font-size:xx-large;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
 }
