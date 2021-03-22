@@ -1,6 +1,8 @@
+@media screen and (min-width: 480px) {
 .topnav {
   background-color: #767;
   overflow: hidden;
+  width:fit-content;
 }
 
 .topnav a {
@@ -48,8 +50,11 @@ legend {
 
 body {
   background-color: #9acdff;
+  max-width: fit-content;
 }
 
 .home {
   font-size:xx-large;
+}
+
 }
