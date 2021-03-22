@@ -23,7 +23,7 @@
 }
 
 p::first-letter {
-  font-size:30px;
+  font-size: 60px;
 }
 
 table, th, td {
@@ -31,11 +31,25 @@ table, th, td {
   border:2px solid #000000;
 }
 
-fieldset {
+.infoGen {
   background-color: #03fc77;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.infoPers{
+  background-color: burlywood;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+legend {
+  font-style: oblique;
+  font-weight: bold;
 }
 
 body {
   background-color: #5da5ec;
 }
 
+.home {
+  font-size:xx-large;
+}
