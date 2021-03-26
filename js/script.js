@@ -11,7 +11,21 @@ document.getElementById("url").innerHTML =
 "Page location is " + window.location.href;
 }
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    document.getElementById("loc").innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  document.getElementById("loc").innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+
 function info(){
-  refreshTime()
-  url()
+  refreshTime();
+  url();
+  getLocation();
 }
