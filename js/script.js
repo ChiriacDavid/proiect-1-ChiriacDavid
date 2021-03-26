@@ -10,3 +10,8 @@ function url(){
 document.getElementById("url").innerHTML =
 "Page location is " + window.location.href;
 }
+
+function info(){
+  refreshTime()
+  url()
+}
