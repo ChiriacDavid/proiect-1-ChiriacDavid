@@ -50,7 +50,6 @@ legend {
 
 body {
   background-color: #9acdff;
-  max-width: fit-content;
 }
 
 .home {
@@ -68,6 +67,14 @@ footer {
   padding: 3px;
   background-color: DarkSalmon;
   color: white;
+}
+
+aside {
+  font-size: large;
+  width: 30%;
+  float: left;
+  font-style: italic;
+  background-color: lightgray;
 }
 
 }
