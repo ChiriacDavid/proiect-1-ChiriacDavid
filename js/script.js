@@ -56,6 +56,7 @@ function info(){
 function extragere(){
   var nr=0;
   var numere = [];
+  var citite = [];
 
   let hexRef = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
 
@@ -67,13 +68,15 @@ function extragere(){
         }
       }
   }
+  citite=document.getElementById("formular").elements;
   for(i=1;i<=8;i++){
     for(j=1;j<=8;j++){
-      if(document.getElementById("formular").elements[i].value==numere[j]){
+      if(citite.item(i)==numere[j]){
         nr++;
       }
     }
   }
+  alert(citite[1]);
   alert("numerele extrase sunt: "+numere[1] +","+numere[2]+","+numere[3]+","
       +numere[4]+","+numere[5]+","+numere[6]+","+numere[7]+","+numere[8])
 }
