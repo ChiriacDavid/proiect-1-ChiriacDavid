@@ -77,4 +77,15 @@ aside {
   background-color: lightgray;
 }
 
+.Info {
+  background-color: #03fc77;
+}
+
+.Loto {
+  background-color: aquamarine;
+}
+
+button {
+  font-size: larger;
+}
 }
