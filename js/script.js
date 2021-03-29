@@ -68,15 +68,70 @@ function extragere(){
         }
       }
   }
-  citite=document.getElementById("formular").elements;
+  citite[1]=document.getElementById("1").value;
+  citite[2]=document.getElementById("2").value;
+  citite[3]=document.getElementById("3").value;
+  citite[4]=document.getElementById("4").value;
+  citite[5]=document.getElementById("5").value;
+  citite[6]=document.getElementById("6").value;
+  citite[7]=document.getElementById("7").value;
+  citite[8]=document.getElementById("8").value;
   for(i=1;i<=8;i++){
     for(j=1;j<=8;j++){
-      if(citite.item(i)==numere[j]){
+      if(citite[i]==numere[j]){
         nr++;
       }
     }
   }
-  alert(citite[1]);
-  alert("numerele extrase sunt: "+numere[1] +","+numere[2]+","+numere[3]+","
-      +numere[4]+","+numere[5]+","+numere[6]+","+numere[7]+","+numere[8])
+  document.getElementById("NrGhicite").innerHTML="<br><br>" + "Numerele extrase sunt: "+numere[1] +","+numere[2]+","+numere[3]+","
+  +numere[4]+","+numere[5]+","+numere[6]+","+numere[7]+","+numere[8]+"<br><br>"+"Ati ghicit "+nr+" numere!!! <br><br>";
+}
+
+
+/*function draw(){
+  var c = document.getElementById("myCanvas");
+  const canvas = c.getContext("2d");
+  canvas.clearRect(0,0,c.clientWidth,c.height);
+  var ctx = c.getContext("2d");
+  var ctx2 = c.getContext("2d");
+  ctx2.strokeStyle=document.getElementById("Contur").value;
+  ctx2.strokeRect(20,20,150,100);
+  ctx.fillStyle = document.getElementById("Umplere").value;
+  ctx.fillRect(20, 20, 150, 100);
+}
+*/
+
+var clicknr=0;
+function draw(event) {
+  var c = document.getElementById("myCanvas");
+  if(clicknr==0){
+    clicknr=1;
+    x1=event.clientX;
+    y1=event.clientY;
+  }
+  else if(clicknr==1){
+    clicknr=2;
+    x2=event.clientX;
+    y2=event.clientY;
+    var ctx = c.getContext("2d");
+    var ctx2 = c.getContext("2d");
+    ctx2.strokeStyle=document.getElementById("Contur").value;
+    ctx2.strokeRect(x1,y2,x2-x1,y2-y1);
+    ctx.fillStyle = document.getElementById("Umplere").value;
+    ctx.fillRect(x1,y2,x2-x1,y2-y1);
+  }
+  else if(clicknr=2){
+    clicknr=0;
+    const canvas = c.getContext("2d");
+    canvas.clearRect(0,0,c.clientWidth,c.height);
+  }
+
+}
+
+document.addEventListener("click", printMousePos);
+
+function getClickPosition(e) {
+  var xPosition = e.clientX;
+  var yPosition = e.clientY;
+  alert(xPosition +" "+ yPosition);
 }
