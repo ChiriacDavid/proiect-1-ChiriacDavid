@@ -6,7 +6,7 @@
 		<script src="js/script.js" language="javascript"></script>
 		<title>Invat JS</title>
 	</head>
-	<body onload=info()>
+	<body onload=info();>
 		<nav class="topnav">
 			<a href="index.html">Acasa</a>
 			<a href="inregistreaza.html">Inregistreaza</a>
@@ -17,8 +17,9 @@
 		</nav>
 		<aside id="aside-js">
 			<a href="#Info">Info</a> <br>
-			<a href="#Loto">Loto</a>
-		</aside> <br><br><br>
+			<a href="#Loto">Loto</a> <br>
+			<a href="#Desenare">Desenare</a> <br>
+		</aside> <br><br><br><br>
 		<section id="Info" class="Info">
 			<a id="dataOra"></a><br>
 			<a id="url"></a><br>
@@ -37,7 +38,17 @@
 			<input type = "text" id="7" pattern="[A-Z0-9]{2}">
 			<input type = "text" id="8" pattern="[A-Z0-9]{2}"> <br><br>
 			</form>
+			<a id="NrGhicite"></a>
 			<button id="extrage" onclick="extragere()">Extrage</button>
+		</section> <br><br><br>
+
+		<section id="Desenare" class="Desenare">
+			<label >Culoare contur:</label>
+			<input type="color" id="Contur" value="#0000ff"><br><br>
+			<label>Culoarea umplere:</label>
+			<input type="color" id="Umplere" value="#0000ff"><br><br>
+			<canvas id="myCanvas" width="400" height="200" onclick=getClickPosition(click)></canvas>
+			
 		</section>
 	</body>
 	<footer>
