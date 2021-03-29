@@ -88,7 +88,7 @@ function extragere(){
 }
 
 
-/*function draw(){
+function draw(){
   var c = document.getElementById("myCanvas");
   const canvas = c.getContext("2d");
   canvas.clearRect(0,0,c.clientWidth,c.height);
@@ -99,20 +99,20 @@ function extragere(){
   ctx.fillStyle = document.getElementById("Umplere").value;
   ctx.fillRect(20, 20, 150, 100);
 }
-*/
 
-var clicknr=0;
-function draw(event) {
+
+/*var clicknr=0;
+function draw() {
   var c = document.getElementById("myCanvas");
   if(clicknr==0){
     clicknr=1;
-    x1=event.clientX;
-    y1=event.clientY;
+    x1=evt.clientX;
+    y1=evt.clientY;
   }
   else if(clicknr==1){
     clicknr=2;
-    x2=event.clientX;
-    y2=event.clientY;
+    x2=evt.clientX;
+    y2=evt.clientY;
     var ctx = c.getContext("2d");
     var ctx2 = c.getContext("2d");
     ctx2.strokeStyle=document.getElementById("Contur").value;
@@ -123,15 +123,9 @@ function draw(event) {
   else if(clicknr=2){
     clicknr=0;
     const canvas = c.getContext("2d");
-    canvas.clearRect(0,0,c.clientWidth,c.height);
+    canvas.clearRect(0,0,c.width,c.height);
   }
 
 }
 
-document.addEventListener("click", printMousePos);
-
-function getClickPosition(e) {
-  var xPosition = e.clientX;
-  var yPosition = e.clientY;
-  alert(xPosition +" "+ yPosition);
-}
+document.addEventListener("click", draw);*/
