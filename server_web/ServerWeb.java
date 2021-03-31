@@ -32,6 +32,8 @@ public class ServerWeb {
 			String resursa="";
 			resursa=linieDeStart.substring(linieDeStart.indexOf("/"));
 			resursa=resursa.split(" ")[0];
+
+			//# TODO trimiterea răspunsului HTTP
 			String type=resursa.substring(resursa.indexOf(".")+1);
 			String content_type="";
 			switch(type)
@@ -46,8 +48,6 @@ public class ServerWeb {
 					content_type="text/"+type;
 					break;
 			}
-			//# TODO trimiterea răspunsului HTTP
-
 			String hostName = "localhost";
 			int serverPort = 5678;
 			// închide conexiunea cu clientul
