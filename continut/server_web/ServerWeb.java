@@ -3,6 +3,7 @@ package server_web;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -50,6 +51,14 @@ public class ServerWeb {
 			}
 			String hostName = "localhost";
 			int serverPort = 5678;
+
+			OutputStream clientOutput = clientSocket.getOutputStream();
+        	clientOutput.write("HTTP/1.1 200 OK\r\n".getBytes());
+        	clientOutput.write(("ContentType: text/html\r\n").getBytes());
+        	clientOutput.write("\r\n".getBytes());
+      	 	clientOutput.write("<b>It works!</b>".getBytes());
+       		clientOutput.write("\r\n\r\n".getBytes());
+       	 	clientOutput.flush();
 			// închide conexiunea cu clientul
 			// la apelul metodei close() se închid automat fluxurile de intrare și ieșire (socketReader și socketWriter)
 			clientSocket.close();
