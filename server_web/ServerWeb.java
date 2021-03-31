@@ -32,7 +32,24 @@ public class ServerWeb {
 			String resursa="";
 			resursa=linieDeStart.substring(linieDeStart.indexOf("/"));
 			resursa=resursa.split(" ")[0];
+			String type=resursa.substring(resursa.indexOf(".")+1);
+			String content_type="";
+			switch(type)
+			{
+				case "js":
+					content_type="application/"+type;
+					break;
+				case "x-icon":
+					content_type="image/"+type;
+					break;
+				default:
+					content_type="text/"+type;
+					break;
+			}
 			//# TODO trimiterea răspunsului HTTP
+
+			String hostName = "localhost";
+			int serverPort = 5678;
 			// închide conexiunea cu clientul
 			// la apelul metodei close() se închid automat fluxurile de intrare și ieșire (socketReader și socketWriter)
 			clientSocket.close();
