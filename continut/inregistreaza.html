@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/stil.css">
+		<title>Inregistreaza</title>
+	</head>
+	<body>
+		<nav class="topnav">
+			<a href="index.html">Acasa</a>
+			<a class = "active" href="inregistreaza.html">Inregistreaza</a>
+			<a href="despre_html.html">Despre HTML</a>
+			<a href="desen.html">Desen</a>
+			<a href="video.html">Video</a>
+			<a href="invat_js.html">Invat JS</a>
+		</nav>
+	<form>
+		<fieldset class="infoGen">
+			<legend>Informatii generale:</legend>
+			<label id="NumeUtilizator">Nume utilizator:</label>
+			<input type="text" name="NumeUtilizator"><br><br>
+			<label id="Parola">Parola:</label>
+			<input type="password" name="Parola"><br><br>
+			<label id="Nume">Nume:</label>
+			<input type="text" name="Nume"><br><br>
+			<label id="Prenume">Prenume</label>
+			<input type="text" name="Prenume"><br><br>
+			<label id="Email">Email:</label>
+			<input type="email" name="Email"><br><br>
+			<label id="Telefon">Telefon:</label>
+			<input type="tel" name="Telefon">
+		</fieldset>
+		<fieldset class="infoPers">
+			<legend>Informatii personale:</legend>
+			<label id="Sexul">Sexul:</label>
+			<select name="Sexul">
+				<option value="M">M</option>
+				<option value="F">F</option>
+			</select><br><br>
+			<label id="Mancare">Mancare preferata:</label>
+			<input list="mancare" name="Mancare">
+			<datalist id="mancare">
+				<option value="Sarmale">
+				<option value="Ciorba de vacuta">
+				<option value="Pizza">
+				<option value="Paste">
+			</datalist><br><br>
+			<label id="Culoare">Culoarea preferata:</label>
+			<input type="color"><br><br>
+			<label id="DataNasterii">Data nasterii:</label>
+			<input type="date"><br><br>
+			<label id="OraNasterii">Ora nasterii:</label>
+			<input type="time"><br><br>
+			<label id="Varsta">Varsta:</label>
+			<input type="range" min="0" max="100"><br><br>
+			<label id="Adresa">Adresa paginii personale:</label>
+			<input type="url"><br><br>
+			<label id="Descriere">Descriere:</label>
+			<textarea>
+			</textarea>
+		</fieldset>
+		<button type="button" disabled>Inregistreaza</button>
+	</form>
+	</body>
+	<footer>
+		Author: David Chiriac <br>
+		<a href="mailto:chiriac_david99@yahoo.com">chiriac_david99@yahoo.com</a>
+	</footer>
+</html>
