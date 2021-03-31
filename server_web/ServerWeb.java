@@ -1,3 +1,5 @@
+package server_web;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -26,8 +28,11 @@ public class ServerWeb {
 			String linieDeStart = socketReader.readLine();
 			System.out.println("S-a citit linia de start din cerere: ##### " + linieDeStart + " #####");
 			// mesajul citit este transmis la client
-			# TODO interpretarea sirului de caractere `linieDeStart` pentru a extrage numele resursei cerute
-			# TODO trimiterea răspunsului HTTP
+			//# TODO interpretarea sirului de caractere `linieDeStart` pentru a extrage numele resursei cerute
+			String resursa="";
+			resursa=linieDeStart.substring(linieDeStart.indexOf("/"));
+			resursa=resursa.split(" ")[0];
+			//# TODO trimiterea răspunsului HTTP
 			// închide conexiunea cu clientul
 			// la apelul metodei close() se închid automat fluxurile de intrare și ieșire (socketReader și socketWriter)
 			clientSocket.close();
