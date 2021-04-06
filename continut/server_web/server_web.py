@@ -57,7 +57,7 @@ while True:
         else:
             mimetype = 'text/html'
 
-        header += 'Content-Type: '+str(mimetype)+'<strong>\n\n</strong>'
+        header += 'Content-Type: '+str(mimetype)+'\n\n'
 
     except Exception as e:
         header = 'HTTP/1.1 404 Not Found\n\n'
