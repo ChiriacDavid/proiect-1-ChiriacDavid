@@ -7,10 +7,10 @@
 
 .topnav a {
   float: left;
-  display: block;
+  display:block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
   font-size: 30px;
 }
@@ -34,12 +34,14 @@ table, th, td {
 }
 
 .infoGen {
-  background-color: #03fc77;
+  background: rgb(9,9,121);
+  background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,255,50,1) 0%, rgba(5,125,88,1) 100%, rgba(4,36,0,0) 100%, rgba(0,227,48,1) 100%);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .infoPers{
-  background-color: burlywood;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(141,190,122,0.12398462803089982) 54%, rgba(253,187,45,1) 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -52,10 +54,6 @@ body {
   background-color: #9acdff;
 }
 
-.home {
-  font-size:xx-large;
-}
-
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -63,10 +61,13 @@ body {
 }
 
 footer {
-  text-align: center;
-  padding: 3px;
-  background-color: DarkSalmon;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: salmon;
   color: white;
+  text-align: center;
 }
 
 aside {
