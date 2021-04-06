@@ -39,8 +39,8 @@ while True:
     clientsocket.send(str.encode('\r\n'))
     # send data per line
     for l in f.readlines():
-        #print('Sent ', repr(l))
+        print('Sent ', repr(l))
         clientsocket.sendall(str.encode(""+l+"", 'ISO-8859-2'))
-        l = f.read(2048)
+        l = f.read(1024)
     clientsocket.close()
     print ('S-a terminat comunicarea cu clientul.')
