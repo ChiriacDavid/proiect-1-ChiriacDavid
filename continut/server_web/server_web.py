@@ -1,5 +1,4 @@
 import socket
-import urllib2
 
 # creeaza un server socket
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
