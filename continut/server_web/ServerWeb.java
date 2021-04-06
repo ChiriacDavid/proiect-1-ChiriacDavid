@@ -51,14 +51,6 @@ public class ServerWeb {
 			}
 			String hostName = "localhost";
 			int serverPort = 5678;
-
-			OutputStream clientOutput = clientSocket.getOutputStream();
-        	clientOutput.write("HTTP/1.1 200 OK\r\n".getBytes());
-        	clientOutput.write(("ContentType: text/html\r\n").getBytes());
-        	clientOutput.write("\r\n".getBytes());
-      	 	clientOutput.write("<b>It works!</b>".getBytes());
-       		clientOutput.write("\r\n\r\n".getBytes());
-       	 	clientOutput.flush();
 			// închide conexiunea cu clientul
 			// la apelul metodei close() se închid automat fluxurile de intrare și ieșire (socketReader și socketWriter)
 			clientSocket.close();
