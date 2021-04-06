@@ -33,15 +33,6 @@ while True:
     adresa=adresa[1:len(adresa)]
     #DO trimiterea răspunsului HTTP
     filename=os.path.join( os.getcwd(),'continut', adresa)
-    #f=open(filename,'r')
-    #clientsocket.sendall(str.encode("HTTP/1.0 200 OK\n",'utf-8'))
-    #clientsocket.sendall(str.encode('Content-Type: text/html\n', 'utf-8'))
-    #clientsocket.send(str.encode('\r\n'))
-    # send data per line
-    #for l in f.readlines():
-    #    print('Sent ', repr(l))
-    #    clientsocket.sendall(str.encode(""+l+"", 'utf-8'))
-    #    l = f.read(1024)
     
     try:
         file = open(filename,'rb') # open file , r => read , b => byte format
