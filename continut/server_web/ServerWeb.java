@@ -1,4 +1,4 @@
-package server_web;
+package continut.server_web;
 
 import java.io.BufferedReader;
 import java.io.IOException;
