@@ -1,105 +1,83 @@
-<!DOCTYPE html>
-<html lang="ro">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/stil.css">
-        <title>Despre HTML</title>
-    </head>
-    <body>
-        <nav class="topnav">
-			<a href="acasa.html">Acasa</a>
-			<a href="inregistreaza.html">Inregistreaza</a>
-			<a class = "active" href="despre_html.html">Despre HTML</a>
-			<a href="desen.html">Desen</a>
-			<a href="video.html">Video</a>
-            <a href="invat_js.html">Invat JS</a>
-		</nav>
-        <h1>Programare web</h1>
-        <h2>Limbajul HTML</h2>
-        <p>
-            <b>HTML(HyperText Markup Language)</b> este un <i>limbaj de marcare</i> utilizat pentru a crea pagini web.
-        </p>
-        <p> Un exemplu de cod html il gasiti in imaginea urmatoare care se afla la adresa <a href="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png">https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png</a> 
-            <br/>Imaginea are atributul height de valoare 147
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png" alt="HTML logo" height="147">
-        <br/> <br/>
-        <b><i>Tag-urile</i></b> html cele mai utilizate in realizarea tabelelor sunt:
-        <br/> 
+<h1>Programare web</h1>
+<h2>Limbajul HTML</h2>
+<p>
+    <b>HTML(HyperText Markup Language)</b> este un <i>limbaj de marcare</i> utilizat pentru a crea pagini web.
+</p>
+<p> Un exemplu de cod html il gasiti in imaginea urmatoare care se afla la adresa <a href="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png">https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png</a> 
+    <br/>Imaginea are atributul height de valoare 147
+</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HTML_logo.png" alt="HTML logo" height="147">
+<br/> <br/>
+<b><i>Tag-urile</i></b> html cele mai utilizate in realizarea tabelelor sunt:
+<br/> 
 
-        <table>
-            <tr>
-              <td>table</td>
-              <td>defineste un tabel</td>
-            </tr>
-            <tr>
-              <td>tr</td>
-              <td>un rand intr-un tabel</td>
-            </tr>
-            <tr>
-              <td>td</td>
-              <td>o celula intr-un tabel</td>
-            </tr>
-        </table> 
-        <br/>
-        <b>Observatie:</b> Pentru a pune un contur unui tabel se poate (dar nu se recomanda) sa se puna atributul <small>border="1"</small>.
-        <br/>
-        La validare va da eroare: <i>The boder attribute on the table element is absolete.</i>
-        
-        <p>
-        Formularele se pot crea cu ajutorul tag-ului <em>form</em> care poate contine tag-urile: <small>input, textarea, label, select, option, button.</small>
-        <br/>
-        Pentru mai multe detalii consultati cursul sau tutorialul <a href="http://www.w3schools.com/html/html_forms.asp">HTML Forms and Inputs</a> de la adresa <a href= "http://www.w3schools.com/html/html_forms.asp">http://www.w3schools.com/html/html_forms.asp</a>.
-        </p>
-        <form>
-            <label>Nume:</label>
-            <input type="text"><br>
+<table>
+    <tr>
+        <td>table</td>
+        <td>defineste un tabel</td>
+    </tr>
+    <tr>
+        <td>tr</td>
+        <td>un rand intr-un tabel</td>
+    </tr>
+    <tr>
+        <td>td</td>
+        <td>o celula intr-un tabel</td>
+    </tr>
+</table> 
+<br/>
+<b>Observatie:</b> Pentru a pune un contur unui tabel se poate (dar nu se recomanda) sa se puna atributul <small>border="1"</small>.
+<br/>
+La validare va da eroare: <i>The boder attribute on the table element is absolete.</i>
 
-            <label>Prenume:</label>
-            <input type="text"><br>
+<p>
+Formularele se pot crea cu ajutorul tag-ului <em>form</em> care poate contine tag-urile: <small>input, textarea, label, select, option, button.</small>
+<br/>
+Pentru mai multe detalii consultati cursul sau tutorialul <a href="http://www.w3schools.com/html/html_forms.asp">HTML Forms and Inputs</a> de la adresa <a href= "http://www.w3schools.com/html/html_forms.asp">http://www.w3schools.com/html/html_forms.asp</a>.
+</p>
+<form>
+    <label>Nume:</label>
+    <input type="text"><br>
 
-            <label>Parola:</label>
-            <input type="password"><br>
+    <label>Prenume:</label>
+    <input type="text"><br>
 
-            <label>Culoarea preferata:</label>
-            <select  size="1">
-                <option>Rosu</option>
-                <option>Albastru</option>
-                <option>Verde</option>
-            </select><br>
+    <label>Parola:</label>
+    <input type="password"><br>
 
-            <label>Descriere:</label>
-            <textarea>
-            </textarea><br>
+    <label>Culoarea preferata:</label>
+    <select  size="1">
+        <option>Rosu</option>
+        <option>Albastru</option>
+        <option>Verde</option>
+    </select><br>
 
-            <input type="checkbox">
-            <label>Sunt de acord cu conditiile</label><br>
-            <br>
+    <label>Descriere:</label>
+    <textarea>
+    </textarea><br>
 
-            <button>Inregistreaza</button>
-        </form>
+    <input type="checkbox">
+    <label>Sunt de acord cu conditiile</label><br>
+    <br>
+
+    <button>Inregistreaza</button>
+</form>
 
 
-        <p>
-            Pentru a crea liste se pot folosi tag-urile:<br>
-        </p>
-            <ol type = "i">
-                <li>ul - lista neordonata</li>
-                <li>ol - lista ordonata</li>
-                <li>li - item in lista</li>
-                <li>dl - lista cu descrieri</li>
-                <li>dt - termen dintr-o lista cu descrieri</li>
-                <li>dd - descrierea dintr-o lista cu descrieri</li>
-            </ol><br>
-        <p>
-            Pentru a insera un document HTML în altul se poate folosi tag-ul <em>iframe</em>. <br>
-            Astfel, exemplul de mai jos inserează conținutul de la adresa <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>. <br>
-        </p>
-            <iframe src="https://html.spec.whatwg.org/multipage/" title="html page" width="650"></iframe>
-            <br><br>        
-    </body>
-    <footer>
-        Author: David Chiriac <br>
-        <a href="mailto:chiriac_david99@yahoo.com">chiriac_david99@yahoo.com</a>
-    </footer>
-</html>
+<p>
+    Pentru a crea liste se pot folosi tag-urile:<br>
+</p>
+    <ol type = "i">
+        <li>ul - lista neordonata</li>
+        <li>ol - lista ordonata</li>
+        <li>li - item in lista</li>
+        <li>dl - lista cu descrieri</li>
+        <li>dt - termen dintr-o lista cu descrieri</li>
+        <li>dd - descrierea dintr-o lista cu descrieri</li>
+    </ol><br>
+<p>
+    Pentru a insera un document HTML în altul se poate folosi tag-ul <em>iframe</em>. <br>
+    Astfel, exemplul de mai jos inserează conținutul de la adresa <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>. <br>
+</p>
+    <iframe src="https://html.spec.whatwg.org/multipage/" title="html page" width="650"></iframe>
+    <br><br>        
