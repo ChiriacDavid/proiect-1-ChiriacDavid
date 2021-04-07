@@ -102,7 +102,7 @@ function draw(){
 
 
 function schimbaContinut(resursa){
-  /*var xmlhttp;
+  var xmlhttp;
   if (window.XMLHttpRequest) {
   xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange =
@@ -112,8 +112,7 @@ function schimbaContinut(resursa){
     xmlhttp.responseText;
   }
   }
-  xmlhttp.open("GET", "info.txt", true);
+  xmlhttp.open("GET", resursa+".html", true);
   xmlhttp.send();
-}*/
-  document.getElementById("continut").innerHTML="salut<br>salut<br>salut";
+}
 }
