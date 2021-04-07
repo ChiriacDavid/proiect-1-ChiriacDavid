@@ -101,31 +101,19 @@ function draw(){
 }
 
 
-/*var clicknr=0;
-function draw() {
-  var c = document.getElementById("myCanvas");
-  if(clicknr==0){
-    clicknr=1;
-    x1=evt.clientX;
-    y1=evt.clientY;
+function schimbaContinut(resursa){
+  /*var xmlhttp;
+  if (window.XMLHttpRequest) {
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange =
+  function() {
+  if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    document.getElementById("continut").innerHTML =
+    xmlhttp.responseText;
   }
-  else if(clicknr==1){
-    clicknr=2;
-    x2=evt.clientX;
-    y2=evt.clientY;
-    var ctx = c.getContext("2d");
-    var ctx2 = c.getContext("2d");
-    ctx2.strokeStyle=document.getElementById("Contur").value;
-    ctx2.strokeRect(x1,y2,x2-x1,y2-y1);
-    ctx.fillStyle = document.getElementById("Umplere").value;
-    ctx.fillRect(x1,y2,x2-x1,y2-y1);
   }
-  else if(clicknr=2){
-    clicknr=0;
-    const canvas = c.getContext("2d");
-    canvas.clearRect(0,0,c.width,c.height);
-  }
-
+  xmlhttp.open("GET", "info.txt", true);
+  xmlhttp.send();
+}*/
+  document.getElementById("continut").innerHTML="salut<br>salut<br>salut";
 }
-
-document.addEventListener("click", draw);*/
