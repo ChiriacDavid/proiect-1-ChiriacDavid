@@ -42,13 +42,17 @@ while True:
         header = 'HTTP/1.1 200 OK\n'
 
         if(filename.endswith(".jpg")):
-            mimetype = 'image/jpg'
+            filetype = 'image/jpg'
         elif(filename.endswith(".css")):
-            mimetype = 'text/css'
+            filetype = 'text/css'
+        elif(filename.endswith(".json")):
+            filetype = 'application/json'
+        elif(filename.endswith(".xml")):
+            filetype = 'application/xml'
         else:
-            mimetype = 'text/html'
+            filetype = 'text/html'
 
-        header += 'Content-Type: '+str(mimetype)+'\n\n'
+        header += 'Content-Type: '+str(filetype)+'\n\n'
 
     except Exception as e:
         header = 'HTTP/1.1 404 Not Found\n\n'
