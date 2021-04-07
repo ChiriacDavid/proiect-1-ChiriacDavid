@@ -15,11 +15,6 @@
   font-size: 30px;
 }
 
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
 .topnav a:hover {
   color: #FF00FF;
 }
@@ -72,7 +67,7 @@ footer {
 }
 
 aside {
-  font-size: large;
+  font-size:x-large;
   width: 30%;
   float: left;
   font-style: italic;
