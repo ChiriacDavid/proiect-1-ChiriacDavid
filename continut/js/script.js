@@ -101,7 +101,7 @@ function draw(){
 }
 
 
-function schimbaContinut(resursa){
+function schimbaContinut(resursa,jsFisier,jsFunctie){
   var xmlhttp;
   if (window.XMLHttpRequest) {
   xmlhttp = new XMLHttpRequest();
