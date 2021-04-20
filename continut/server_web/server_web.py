@@ -20,7 +20,7 @@ while True:
     while True:
         data = clientsocket.recv(1024)
         cerere = cerere + data.decode()
-        #print ('S-a citit mesajul: \n---------------------------\n' + cerere + '\n---------------------------')
+        print ('S-a citit mesajul: \n---------------------------\n' + cerere + '\n---------------------------')
         pozitie = cerere.find('\r\n')
         if (pozitie > -1):
             linieDeStart = cerere[0:pozitie]
