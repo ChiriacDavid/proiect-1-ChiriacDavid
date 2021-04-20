@@ -32,11 +32,11 @@ var id=0;
 function addToStorage(){
     if (storageAvailable('localStorage')) {
         id++;
-        //var produs=new Produs(document.getElementById('numeProdus'),document.getElementById('cantitate'), id);
-        //localStorage.setItem('produs',produs)
-        localStorage.setItem('numeProdus',document.getElementById('numeProdus').value);
-        localStorage.setItem('cantitate',document.getElementById('cantitate').value);
-        localStorage.setItem('id',id);
+        var produs=new Produs(document.getElementById('numeProdus'),document.getElementById('cantitate'), id);
+        localStorage.setItem('produs',produs)
+        //localStorage.setItem('numeProdus',document.getElementById('numeProdus').value);
+        //localStorage.setItem('cantitate',document.getElementById('cantitate').value);
+        //localStorage.setItem('id',id);
     }
     else {
         alert('Storage-ul nu este disponibil');
